@@ -5,11 +5,25 @@
 			"referenceName": "AzureBlobStorage1",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"Names": {
+				"type": "Array",
+				"defaultValue": [
+					"Audi",
+					"Volvo",
+					"BMW"
+				]
+			}
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@concat('dataset().Names',' cars.csv')",
+					"type": "Expression"
+				},
 				"container": "blobcontainercars"
 			},
 			"columnDelimiter": ",",

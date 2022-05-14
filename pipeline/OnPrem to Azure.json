@@ -42,11 +42,7 @@
 									},
 									"formatSettings": {
 										"type": "DelimitedTextWriteSettings",
-										"quoteAllText": true,
-										"fileExtension": {
-											"value": "@concat(item(),' cars.csv')",
-											"type": "Expression"
-										}
+										"quoteAllText": true
 									}
 								},
 								"enableStaging": false,
@@ -68,7 +64,14 @@
 							"outputs": [
 								{
 									"referenceName": "carsds",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"Names": [
+											"Audi",
+											"Volvo",
+											"BMW"
+										]
+									}
 								}
 							]
 						}
