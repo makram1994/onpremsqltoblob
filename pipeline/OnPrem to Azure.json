@@ -29,7 +29,7 @@
 								"source": {
 									"type": "SqlServerSource",
 									"sqlReaderQuery": {
-										"value": "@item()",
+										"value": "@concat('select * from DemoDatabase where name=',item())",
 										"type": "Expression"
 									},
 									"queryTimeout": "02:00:00",
@@ -43,7 +43,10 @@
 									"formatSettings": {
 										"type": "DelimitedTextWriteSettings",
 										"quoteAllText": true,
-										"fileExtension": ".csv"
+										"fileExtension": {
+											"value": "@concat(item(),' car.csv')",
+											"type": "Expression"
+										}
 									}
 								},
 								"enableStaging": false,
@@ -77,9 +80,9 @@
 			"v_queries_array": {
 				"type": "Array",
 				"defaultValue": [
-					"SELECT * FROM DBO.Cars where name ='Acura",
-					"SELECT top 20 * FROM DBO.Cars ",
-					"SELECT top 100 * FROM DBO.Cars"
+					"'Audi'",
+					"'BMW'",
+					"'Volvo'"
 				]
 			}
 		},
