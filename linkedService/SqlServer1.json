@@ -1,0 +1,17 @@
+{
+	"name": "SqlServer1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "integrated security=True;data source=WINDOWS-35FNKUQ;initial catalog=DemoDatabase",
+			"userName": "WINDOWS-35FNKUQ\\Adm.user.ms",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI4MmE1MWI5NS1mMTU0LTQ3N2ItYjE2ZC1mZjQyYjFlMDU5NmMiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "selfhostedintegrationRuntime1",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
