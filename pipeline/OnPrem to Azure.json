@@ -29,7 +29,7 @@
 								"source": {
 									"type": "SqlServerSource",
 									"sqlReaderQuery": {
-										"value": "@concat('select * from DemoDatabase where name=',item())",
+										"value": "@concat('select * from Cars where name=',item())",
 										"type": "Expression"
 									},
 									"queryTimeout": "02:00:00",
