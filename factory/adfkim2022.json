@@ -1,0 +1,9 @@
+{
+	"name": "adfkim2022",
+	"location": "northeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "ba80f9fc-d5a7-4dc1-bcf8-04390b947deb",
+		"tenantId": "bf3b13fa-6bb4-4093-a2a6-7104ea4ed424"
+	}
+}
