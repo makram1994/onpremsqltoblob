@@ -1,0 +1,9 @@
+{
+	"name": "DataFactory-Makram",
+	"location": "northeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "9da2e818-e893-4628-8620-134cd9c11352",
+		"tenantId": "bf3b13fa-6bb4-4093-a2a6-7104ea4ed424"
+	}
+}

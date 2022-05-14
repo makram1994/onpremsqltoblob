@@ -1,0 +1,17 @@
+{
+	"name": "SqlServer2",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "integrated security=True;data source=WINDOWS-35FNKUQ;initial catalog=DemoDatabase",
+			"userName": "WINDOWS-35FNKUQ\\Adm.user.ms",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI2MWMyZDIwOC0wZTY3LTQ2NGUtYmQ3YS1hNTczMTQ5YzhkOTMiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "slefhostedIR",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
